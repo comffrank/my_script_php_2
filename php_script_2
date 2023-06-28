@@ -1,0 +1,11 @@
+> Constants and (global) variables are in a different namespace. This implies that for example true and $TRUE are generally different. 
+
+This means that you may assign a value to a variable with the same name of a constant, which might lead to unwanted results.
+
+<?php
+const FOO = "hello";
+$FOO = "goodbye";
+echo $FOO;
+?>
+
+will output ``goodbye''.
