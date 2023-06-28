@@ -1,0 +1,19 @@
+const ArrayFromTextfile = file("mytextfile.txt", FILE_IGNORE_NEW_LINES);
+
+does not work, it throws an error:
+Fatal error: Constant expression contains invalid operations in php shell code on line …
+
+Instead use:
+
+define ("ArrayFromTextfile", file("mytextfile.txt", FILE_IGNORE_NEW_LINES));
+
+print_r(ArrayFromTextfile);
+
+Result:
+Array
+(
+    [0] ⇨ Line 1
+    [1] ⇨ Line 2
+    [2] ⇨ Line 3
+    [3] => …
+)
