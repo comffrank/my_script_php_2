@@ -9,3 +9,6 @@ echo $FOO;
 ?>
 
 will output ``goodbye''.
+######
+######
+######
