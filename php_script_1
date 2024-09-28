@@ -1,3 +1,4 @@
+###### test php scripts ######
 const ArrayFromTextfile = file("mytextfile.txt", FILE_IGNORE_NEW_LINES);
 
 does not work, it throws an error:
